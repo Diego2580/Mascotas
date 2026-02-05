@@ -47,7 +47,9 @@ coverage/
 .DS_Store
 Thumbs.db
 
-# Angular cache
+# Angular cache (IMPORTANT - Very large files!)
+.angular/cache/
+mascotas-frontend/.angular/cache/
 .angular/
 # Dependencias
 node_modules/
