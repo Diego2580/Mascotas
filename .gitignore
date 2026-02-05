@@ -23,6 +23,7 @@ build/
 node_modules/
 npm-debug.log
 dist/
+.angular/
 
 # Environment
 .env
