@@ -70,7 +70,7 @@ export interface ApiInfo {
 })
 export class MonitoringService {
 
-  private readonly baseUrl = 'https://mascotas-api.onrender.com/api/monitoring';
+  private readonly baseUrl = 'http://localhost:8080/api/monitoring';
 
   constructor(private http: HttpClient) { }
 

@@ -11,7 +11,7 @@ export class MascotaService {
   // API URL - cambia según el entorno
   // Development: http://localhost:8080/api/mascotas
   // Production: https://mascotas-api.onrender.com/api/mascotas
-  private apiUrl = 'https://mascotas-api.onrender.com/api/mascotas';
+  private apiUrl = 'http://localhost:8080/api/mascotas';
 
   constructor(private http: HttpClient) { }
 
