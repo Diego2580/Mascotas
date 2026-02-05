@@ -1,0 +1,11 @@
+.card-header {
+  border-bottom: none;
+}
+
+.badge {
+  font-size: 0.875rem;
+}
+
+.btn-group {
+  gap: 0.5rem;
+}

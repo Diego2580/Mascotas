@@ -1,0 +1,89 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Bootstrap Customization */
+.btn {
+  border-radius: 0.375rem;
+  font-weight: 500;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.table {
+  background-color: white;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: #343a40;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.navbar {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Utilities */
+.text-muted {
+  color: #6c757d !important;
+}
+
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.125em;
+}
+
+/* Forms */
+.form-control:focus,
+.form-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #495057;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0.5rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+  }
+}

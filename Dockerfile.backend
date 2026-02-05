@@ -1,0 +1,12 @@
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+# Copiar JAR compilado
+COPY mascotas-backend/target/mascotas-api-1.0.0.jar app.jar
+
+# Exponer puerto
+EXPOSE 8080
+
+# Ejecutar aplicación
+ENTRYPOINT ["java", "-jar", "app.jar"]

@@ -1,0 +1,28 @@
+# Configuración de Data Sources para Grafana
+# Coloca este archivo en: ./grafana-datasources.yml
+
+apiVersion: 1
+
+datasources:
+  # InfluxDB - Data Source para k6
+  - name: InfluxDB
+    type: influxdb
+    access: proxy
+    orgId: 1
+    url: http://influxdb:8086
+    password: "k6pass"
+    user: "k6user"
+    database: "k6"
+    isDefault: true
+    editable: true
+    jsonData:
+      timeInterval: "5s"
+
+  # Prometheus (opcional)
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    orgId: 1
+    url: http://prometheus:9090
+    isDefault: false
+    editable: true
