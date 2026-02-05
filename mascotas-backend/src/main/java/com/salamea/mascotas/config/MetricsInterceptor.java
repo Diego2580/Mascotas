@@ -3,6 +3,7 @@ package com.salamea.mascotas.config;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Timer;
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -15,6 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
  */
 @Component
 @RequiredArgsConstructor
+@ConditionalOnBean(MeterRegistry.class)
 public class MetricsInterceptor implements HandlerInterceptor {
 
     private final MeterRegistry meterRegistry;
