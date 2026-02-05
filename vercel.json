@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd mascotas-frontend && npm run build",
+  "outputDirectory": "mascotas-frontend/dist/mascotas-frontend",
+  "framework": "angular",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

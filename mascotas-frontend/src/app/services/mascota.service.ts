@@ -8,7 +8,10 @@ import { Mascota, PromedioEdad, EstadisticaEspecie } from '../models/mascota.mod
   providedIn: 'root'
 })
 export class MascotaService {
-  private apiUrl = 'http://localhost:8080/api/mascotas';
+  // API URL - cambia según el entorno
+  // Development: http://localhost:8080/api/mascotas
+  // Production: https://mascotas-api.onrender.com/api/mascotas
+  private apiUrl = 'https://mascotas-api.onrender.com/api/mascotas';
 
   constructor(private http: HttpClient) { }
 

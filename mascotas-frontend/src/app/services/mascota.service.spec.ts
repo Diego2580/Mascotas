@@ -6,7 +6,7 @@ import { Mascota } from '../models/mascota.model';
 describe('MascotaService', () => {
   let service: MascotaService;
   let httpMock: HttpTestingController;
-  const apiUrl = 'http://localhost:8080/api/mascotas';
+  const apiUrl = 'https://mascotas-api.onrender.com/api/mascotas';
 
   const mascotaMock: Mascota = {
     id: 1,

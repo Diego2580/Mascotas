@@ -70,7 +70,7 @@ export interface ApiInfo {
 })
 export class MonitoringService {
 
-  private readonly baseUrl = 'http://localhost:8080/api/monitoring';
+  private readonly baseUrl = 'https://mascotas-api.onrender.com/api/monitoring';
 
   constructor(private http: HttpClient) { }
 
@@ -185,7 +185,7 @@ export class MonitoringService {
    * Obtiene métricas principales para dashboard
    */
   getDashboardMetrics(): Observable<any> {
-    return this.http.get<any>('http://localhost:8080/api/actuator/metrics').pipe(
+    return this.http.get<any>('https://mascotas-api.onrender.com/api/actuator/metrics').pipe(
       catchError(() => of({ names: [] }))
     );
   }
@@ -194,7 +194,7 @@ export class MonitoringService {
    * Obtiene detalles de una métrica específica
    */
   getMetricDetail(metricName: string): Observable<any> {
-    return this.http.get<any>(`http://localhost:8080/api/actuator/metrics/${metricName}`).pipe(
+    return this.http.get<any>(`https://mascotas-api.onrender.com/api/actuator/metrics/${metricName}`).pipe(
       catchError(() => of(null))
     );
   }
