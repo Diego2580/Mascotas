@@ -45,3 +45,11 @@ coverage/
 # OS
 .DS_Store
 Thumbs.db
+
+# Angular cache
+.angular/
+# Dependencias
+node_modules/
+# Archivos de sistema
+.DS_Store
+dist/
